@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(87, 149, 243);
+    font-family: 'Comfortaa', cursive;
+    height: 100vh;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 5px 5px #999;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+#title {
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+}
+
+#start {
+    width: 30%;
+    height: 7vh;
+    font-size: 18px;
+    border: 2px solid rgb(3, 167, 3);
+    border-radius: 10px;
+    background-color: rgb(3, 167, 3);
+    box-shadow: 3px 3px #bbb;
+}
+
+#window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+/* start() */
+
+#manyPlayers {
+    width: 20%;
+    height: 8vh;
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#confirm {
+    width: 35%;
+    height: 7vh;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* confirm() */
+
+#yes {
+    width: 20%;
+    height: 7vh;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#no {
+    width: 20%;
+    height: 7vh;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* fillnames() */
+
+#namePlayers {
+    width: 55%;
+    height: 8vh;
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#next {
+    width: 35%;
+    height: 7vh;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* next() */
+
+#play {
+    width: 30%;
+    height: 7vh;
+    font-size: 18px;
+    border: 2px solid rgb(3, 167, 3);
+    border-radius: 10px;
+    background-color: rgb(3, 167, 3);
+    box-shadow: 3px 3px #bbb;
+}
+
+/* inGame() */
+
+#playerPoints {
+    width: 20%;
+    height: 8vh;
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#add {
+    width: 35%;
+    height: 7vh;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* seeWinners() */
+
+#first {
+    font-size: 20px;
+    margin: 5px;
+    color: rgb(3, 167, 3);
+    text-align: center;
+}
+
+#second {
+    font-size: 18px;
+    margin: 5px;
+    text-align: center;
+}
+
+#third, #rest {
+    font-size: 16px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    height: 10vh;
+}
+
+.copyR {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.copyR p a{
+    text-decoration: none;
+    color: rgb(87, 149, 243);
+}
+
+/* medias */
+
+@media screen and (max-height:550px){
+    #title {
+        font-size: 18px;
+    }
+
+    .container {
+        height: 70vh;
+        width: 70%;
+    }
+
+    #start, #play, #yes, #no, #confirm, #next, #add, #manyPlayers, #namePlayers, #playerPoints {
+        font-size: 16px;
+        height: 15vh;
+    }
+
+    #first {
+        font-size: 16px;
+    }
+    
+    #second, #third, #rest {
+        font-size: 14px;
+    }
+    
+    footer {
+        height: 12vh;
+    }
+}
+
+@media screen and (min-height:900px){
+    #start, #play, #yes, #no, #confirm, #next, #add, #manyPlayers, #namePlayers, #playerPoints {
+        font-size: 32px;
+    }
+
+    #title {
+        font-size: 46px;
+    }
+
+    .copyR p {
+        font-size: 22px;
+    }
+
+    #first {
+        font-size: 32px;
+    }
+    
+    #second {
+        font-size: 28px;
+    }
+    
+    #third {
+        font-size: 26px;
+    }
+
+    #rest {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-height:1150px){
+    #start, #play, #yes, #no, #confirm, #next, #add, #manyPlayers, #namePlayers, #playerPoints {
+        font-size: 36px;
+    }
+
+    .copyR p {
+        font-size: 26px;
+    }
+
+    #first {
+        font-size: 34px;
+    }
+    
+    #second {
+        font-size: 30px;
+    }
+    
+    #third {
+        font-size: 28px;
+    }
+
+    #rest {
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (min-height:1800px){
+    #start, #play, #yes, #no, #confirm, #next, #add, #manyPlayers, #namePlayers, #playerPoints {
+        font-size: 38px;
+    }
+
+    .copyR p {
+        font-size: 30px;
+    }
+
+    #first {
+        font-size: 36px;
+    }
+    
+    #second {
+        font-size: 32px;
+    }
+    
+    #third {
+        font-size: 30px;
+    }
+
+    #rest {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (min-width:900px){
+    #next {
+        width: 30%
+    }
+
+    #namePlayers {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width:1300px){
+    #next {
+        width: 25%
+    }
+
+    #namePlayers {
+        width: 35%;
+    }
+
+}
+
+@media screen and (min-width:1500px){
+    .container{
+        width: 70%;
+    }
+
+    #next {
+        width: 20%
+    }
+
+    #namePlayers {
+        width: 30%;
+    }
+}
